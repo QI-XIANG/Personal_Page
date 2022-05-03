@@ -1,4 +1,12 @@
-/*NavBar Section*/
+@charset "UTF-8";
+/*Change main content header here.*/
+/*Change main content subheader here.*/
+/*Change main content 1 content here.*/
+/*Do not change this! This is the basic block layout.*/
+/*Do not change this! This is the basic block layout.*/
+/*Do not change this! This is the basic block layout.*/
+/*Do not change this! This is the basic block layout.*/
+/*Do not change this! This is the basic block layout.*/
 .navbar {
   background-color: #5569DC;
 }
@@ -17,7 +25,6 @@
   font-family: serif;
 }
 
-/*Simple Intro*/
 .intro-card {
   outline: none;
   border: none;
@@ -38,13 +45,16 @@
   padding: 0px;
 }
 
-/*Main Content*/
+/*Main Content 1-6 header*/
+/*可以在這邊設定主要內容標題大小*/
 h1.main-content-header {
   font-size: 32px;
   font-family: serif;
   color: #5569DC;
 }
 
+/*Main Content 1-6 subheader*/
+/*可以在這邊設定主要內容次要標題大小*/
 p.main-content-subheader {
   font-size: 16px;
   font-family: sans-serif;
@@ -53,6 +63,8 @@ p.main-content-subheader {
   letter-spacing: 0.15em;
 }
 
+/*Main Content 2、3、5、6 content lineheight (Don't change.)*/
+/*這邊是用來維持文字間的行距(預設就好勿更改)*/
 div.main-content-lineheight {
   font-size: 21px;
   line-height: 2em;
@@ -76,6 +88,8 @@ div.main-content-lineheight p.main-content-lightheight-content {
   opacity: 0.8;
 }
 
+/*Main Content 1、2、3、5、6 content block layout (Don't change.)*/
+/*主要內容區的版面配置(預設就好勿動)*/
 div.main-content-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,6 +100,32 @@ div.main-content-block {
   padding-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 0;
+}
+
+/*Main Content 1-6 and Contact Me 1 block layout (Don't change.)*/
+/*主要內容區和聯絡我第一部分的版面配置(預設就好勿動)*/
+div.block-padding-setting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  padding-top: 80px;
+}
+
+/*Main Content 1 content*/
+/*Main Content 1 的內容區塊設定*/
+p.self-intro {
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: normal;
+  font-family: sans-serif;
+  margin: auto;
+  color: #1c2349;
+  opacity: 0.8;
 }
 
 .progress-bar-label {
@@ -121,30 +161,6 @@ p.contact-me-2 {
   padding: 0px;
 }
 
-.footer {
-  background-color: #5569DC;
-}
-
-.footer footer.footer-content {
-  text-align: center;
-  font-size: 14px;
-  font-family: serif;
-  color: white;
-  padding: 10px 0px;
-}
-
-div.block-padding-setting {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 0px;
-  padding-bottom: 5px;
-  padding-top: 80px;
-}
-
 div.contact-me-2-block, div.contact-me-3-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,13 +173,15 @@ div.contact-me-2-block, div.contact-me-3-block {
   padding-top: 0px !important;
 }
 
-p.self-intro {
-  font-size: 18px;
-  line-height: 2em;
-  letter-spacing: normal;
-  font-family: sans-serif;
-  margin: auto;
-  color: #1c2349;
-  opacity: 0.8;
+.footer {
+  background-color: #5569DC;
+}
+
+.footer footer.footer-content {
+  text-align: center;
+  font-size: 14px;
+  font-family: serif;
+  color: white;
+  padding: 10px 0px;
 }
 /*# sourceMappingURL=stylesheet.css.map */

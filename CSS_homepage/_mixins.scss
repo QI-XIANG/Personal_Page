@@ -1,10 +1,12 @@
+//-----1. Primary Font-------//
+//Change primary font setting here
 @mixin primary_font1 {
     color: white;
     font-weight: bold;
     font-size: 20px;
     font-family: serif;
 }
-
+//Change primary font setting here
 @mixin primary_font2 {
     font-weight: bold;
     line-height: 0.5em;
@@ -12,21 +14,27 @@
     color: white;
     font-size: 18px;
 }
+//-----End of Primary Font-----//
 
-@mixin  contact-me-font {
-    text-align: center;
-    font-family:serif;
-    color: #1C2349;
-}
+//-----2. Main Content-----//
 
-@mixin footer-font {
-    text-align: center;
-    font-size: 14px;
+/*Change main content header here.*/
+@mixin main-content-header($font_header:32px){
+    font-size: $font_header;
     font-family: serif;
-    color: white;
-    padding: 10px 0px
+    color: $primary_color1;
 }
 
+/*Change main content subheader here.*/
+@mixin main-content-subheader($font_subheader: 16px){
+    font-size: $font_subheader;
+    font-family: sans-serif;
+    color: $primary_color1;
+    opacity: 0.8;
+    letter-spacing:0.15em
+}
+
+/*Change main content 1 content here.*/
 @mixin self-intro{
     font-size: 18px;
     line-height: 2em;
@@ -37,12 +45,23 @@
     opacity: 0.8;
 }
 
-@mixin main-content-header{
-    font-size: 32px;
-    font-family: serif;
-    color: $primary_color1;
+//Change some main content's title here
+@mixin main-content-lineheight-title {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgb(28,35,73);
 }
 
+//Change some main content's content here
+@mixin main-content-lightheight-content {
+    font-size: 16px;
+    font-family: sans-serif;
+    color:#1C2349;
+    line-height: 1.8em;
+    opacity: 0.8;
+}
+
+/*Do not change this! This is the basic block layout.*/
 @mixin main-content-block {
     display: flex;
     justify-content: center;
@@ -51,14 +70,7 @@
     padding-bottom: 0;
 }
 
-@mixin main-content-subheader{
-    font-size: 16px;
-    font-family: sans-serif;
-    color: $primary_color1;
-    opacity: 0.8;
-    letter-spacing:0.15em
-}
-
+/*Do not change this! This is the basic block layout.*/
 @mixin main-content-lineheight {
     font-size: 21px;
     line-height: 2em;
@@ -68,27 +80,7 @@
     color: #1c2349;
 }
 
-@mixin main-content-lineheight-title {
-    font-size: 16px;
-    font-family: sans-serif;
-    color: rgb(28,35,73);
-}
-
-@mixin main-content-lightheight-content {
-    font-size: 16px;
-    font-family: sans-serif;
-    color:#1C2349;
-    line-height: 1.8em;
-    opacity: 0.8;
-}
-
-@mixin progress-bar-label{
-    width:12em;
-    float: left;
-    margin-top: calc(1rem - 4px);
-    margin-right: 3.5em;
-}
-
+/*Do not change this! This is the basic block layout.*/
 @mixin block-padding-setting {
     display: flex;
     justify-content: center;
@@ -97,6 +89,20 @@
     padding-top: 80px;
 }
 
+//------End of Main Content-----//
+
+//----3. Progress Bar----//
+/*Do not change this! This is the basic block layout.*/
+@mixin progress-bar-label{
+    width:12em;
+    float: left;
+    margin-top: calc(1rem - 4px);
+    margin-right: 3.5em;
+}
+//-----End of Progress Bar------//
+
+//-----4. Contact Me-----//
+/*Do not change this! This is the basic block layout.*/
 @mixin  contact-me-block {
     display: flex;
     justify-content: center;
@@ -104,3 +110,21 @@
     padding-bottom: 5px;
     padding-top: 0px !important;
 }
+//Change contact me font here
+@mixin  contact-me-font {
+    text-align: center;
+    font-family:serif;
+    color: #1C2349;
+}
+//------End of Contact Me------//
+
+//------5. Footer-----//
+//footer layout
+@mixin footer-font {
+    text-align: center;
+    font-size: 14px;
+    font-family: serif;
+    color: white;
+    padding: 10px 0px
+}
+//----End of Footer----//

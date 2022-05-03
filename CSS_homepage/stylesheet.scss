@@ -1,8 +1,11 @@
 @import "mixins";
 
+//This is the main color
+//網頁主要顏色
 $primary_color1: #5569DC;
 
-/*NavBar Section*/
+//-----1. NavBar Section-----//
+//導覽列的相關設定
 .navbar{
     background-color: $primary_color1;
     p {
@@ -16,9 +19,12 @@ $primary_color1: #5569DC;
         }
     }
 }
+//------End of NavBar Section----//
 
 
-/*Simple Intro*/
+//--------2. Simple Intro------//
+//Simple Intro Text Content
+//最上面簡介小卡的文字設定
 .intro-card{
     outline: none;
     border:none;
@@ -28,26 +34,31 @@ $primary_color1: #5569DC;
   
 }
 
+//Simple Background Color
+//最上方簡介小卡的背景色 
 .simple-intro{
     background-color: $primary_color1;
     outline: none;
     border: none;
     padding: 0px;
 }
+//--------End of Simple Intro---------//
 
-/*Main Content*/
-
+//-----3. Main Content-----//
 /*Main Content 1-6 header*/
+/*可以在這邊設定主要內容標題大小*/
 h1.main-content-header{
-    @include main-content-header();
+    @include main-content-header($font_header: 32px);
 }
 
 /*Main Content 1-6 subheader*/
+/*可以在這邊設定主要內容次要標題大小*/
 p.main-content-subheader{
-    @include main-content-subheader();
+    @include main-content-subheader($font_subheader: 16px);
 }
 
-/*Main Content 2、3、5、6 content lineheight*/
+/*Main Content 2、3、5、6 content lineheight (Don't change.)*/
+/*這邊是用來維持文字間的行距(預設就好勿更改)*/
 div.main-content-lineheight{
     @include main-content-lineheight();
     span.main-content-lineheight-title{
@@ -58,22 +69,36 @@ div.main-content-lineheight{
     }
 }
 
+/*Main Content 1、2、3、5、6 content block layout (Don't change.)*/
+/*主要內容區的版面配置(預設就好勿動)*/
 div.main-content-block{
     @include main-content-block();
 }
 
+/*Main Content 1-6 and Contact Me 1 block layout (Don't change.)*/
+/*主要內容區和聯絡我第一部分的版面配置(預設就好勿動)*/
+div.block-padding-setting{
+    @include block-padding-setting();
+}
+
 /*Main Content 1 content*/
+/*Main Content 1 的內容區塊設定*/
 p.self-intro{
     @include self-intro();
 }
 
-/*Progress Bar*/
+//------End of Main Content-----//
 
+//---4. Progress Bar----//
+//學習進度條的版面設定
 .progress-bar-label{
     @include main-content-lightheight-content;
     @include progress-bar-label();
 }
+//----End of Progress Bar----//
 
+//------5. Contact Me------//
+//Contact Me 第1部分的文字、版面設定
 p.contact-me-1{
     @include contact-me-font();
     opacity: 0.9;
@@ -82,6 +107,7 @@ p.contact-me-1{
     font-size: 32px;
 }
 
+//Contact Me 第2部分的文字、版面設定
 p.contact-me-2{
     @include contact-me-font();
     font-size: 20px;
@@ -91,20 +117,27 @@ p.contact-me-2{
     padding: 0px;
 }
 
+//Contact Me 通用的版面設定
+div.contact-me-2-block,div.contact-me-3-block{
+    @include contact-me-block();
+}
+
+//-----End of Contact Me------//
+
+
+//-----6. Footer-----//
+//最底部footer版面設定
 .footer{
     background-color: $primary_color1;
     footer.footer-content{
         @include footer-font();
     }
 }
+//-----Footer-----//
 
-div.block-padding-setting{
-    @include block-padding-setting();
-}
 
-div.contact-me-2-block,div.contact-me-3-block{
-    @include contact-me-block();
-}
+
+
 
 
    
