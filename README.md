@@ -1,5 +1,7 @@
 # 個人網頁模板
 
+![](https://badgen.net/github/commits/QI-XIANG/Personal_Page) ![](https://badgen.net/github/last-commit/QI-XIANG/Personal_Page) ![](https://badgen.net/github/license/QI-XIANG/Personal_Page)
+
 初次寫個人一頁式網頁的模板，可能寫得不是很好請見諒。
 
 撰寫網頁過程真的十分有趣，結合最近學到的一點點 Sass，使原本的程式碼精簡不少。
