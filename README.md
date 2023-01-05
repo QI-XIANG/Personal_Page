@@ -1,5 +1,7 @@
 # 個人網頁模板
 
+(近期將重新設計個人網頁!)
+
 ![](https://badgen.net/github/commits/QI-XIANG/Personal_Page) ![](https://badgen.net/github/last-commit/QI-XIANG/Personal_Page) ![](https://badgen.net/github/license/QI-XIANG/Personal_Page)
 
 初次寫個人一頁式網頁的模板，可能寫得不是很好請見諒。
